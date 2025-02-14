@@ -6,6 +6,8 @@ These are changelog for the repository. All notable changes to this project will
 
 ### Added
 
+- Readme File
+- Changelog File
 
 ### Changed
 
@@ -25,6 +27,5 @@ These are changelog for the repository. All notable changes to this project will
 - `nvim` config files
 - `rofi` config files
 - `waybar` config files
-- Readme File
-- Changelog File
+
 
