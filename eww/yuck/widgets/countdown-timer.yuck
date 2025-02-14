@@ -1,0 +1,61 @@
+
+(defpoll current_time 
+  :interval "1s"
+  :initial-value "Testing123"
+  "date +%s"
+)
+
+(defwidget countdown-timer [] 
+  (box 
+    :class "countdown-box"
+    :orientation "v"
+    (box
+      :class "countdown-value-box"
+      :orientation "h"
+      (box
+        :class "countdown-hour-value"
+        "1"
+      )
+      (box
+        :class "countdown-separator"
+        ":"
+      )
+      (box
+        :class "countdown-minute-value"
+        "1"
+      )
+      (box
+        :class "countdown-separator"
+        ":"
+      )
+      (box
+        :class "countdown-seconds-value"
+        "1"
+      )
+    )
+    (box
+      :class "countdown-text-box"
+      :orientation "h"
+      (box
+        :class "countdown-hour-text"
+        "1"
+      )
+      (box
+        :class "countdown-separator"
+        " "
+      )
+      (box
+        :class "countdown-minute-text"
+        "1"
+      )
+      (box
+        :class "countdown-separator"
+        " "
+      )
+      (box
+        :class "countdown-seconds-text"
+        "1"
+      )
+    )
+  )
+)
