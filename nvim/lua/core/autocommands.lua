@@ -140,3 +140,9 @@ vim.api.nvim_create_autocmd({ "BufWritePre" }, {
     vim.fn.mkdir(vim.fn.fnamemodify(file, ":p:h"), "p")
   end,
 })
+
+-- Auto save a file, so I don't lose a bunch of progress
+vim.api.nvim_create_autocmd({ "CursorHold", "CursorHoldI" }, {
+  group = autocmd_group,
+  command = "if &readonly == 0 && filereadable(bufname('%')) | silent write | endif"
+})

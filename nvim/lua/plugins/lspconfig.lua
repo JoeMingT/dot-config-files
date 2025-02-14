@@ -16,6 +16,9 @@ return {
         lspconfig.cssls.setup({
             capabilities = capabilities
         })
+        lspconfig.bashls.setup({
+            capabilities = capabilities
+        })
     end
 }
 

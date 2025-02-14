@@ -19,7 +19,6 @@ vim.keymap.set('n', '<C-b>', ':NvimTreeToggle<CR>', {})
 -- Bufferline-Related Commands
 vim.keymap.set('n', '<Tab>', ':BufferLineCycleNext<CR>', {})
 vim.keymap.set('n', '<S-Tab>', ':BufferLineCyclePrev<CR>', {})
-vim.keymap.set('n', '<C-w>', ':bdelete!<CR>', {})
 vim.keymap.set('n', '<leader>d', ':BufferLinePickClose<CR>', {})
 vim.keymap.set('n', '<leader>b', ':BufferLinePick<CR>', {})
 -- Incremental-Rename Related Commands

@@ -22,7 +22,7 @@ return {
     }, ---@type (Edgy.View.Opts|string)[]
     bottom = {
       {
-        ft = "terminal",
+        ft = "toggleterm",
         title = "TERMINAL",
         size = { height = 0.33 }
       },

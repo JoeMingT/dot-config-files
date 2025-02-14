@@ -1,28 +1,13 @@
-(defwidget labeled-container [?name]
-  (box
-    :class "container"
-    stuff
-    (children)
-  )
-)
+(include "./yuck/widgets/test-widget.yuck")
+(include "./yuck/widgets/countdown-timer.yuck")
 
-(defwindow test
+(defwindow test-window
   :monitor 0
-  :geometry (geometry
-    :x "0px"
-    :y "0px"
-    :width "90%"
-    :height "50px"
-    :anchor "center center"
+	:geometry (geometry 
+    :x "0px" 
+    :y "0px" 
+    :width "350px" 
+    :height "150px"
   )
-  :stacking "fg"
-  :exclusive false
-  :focusable false
-  (labeled-container 
-    :name "Testing12"
-    (button 
-      :onclick "notify-send hey ho"
-      "Click Me!"
-    )
-  )
+  (countdown-timer)
 )

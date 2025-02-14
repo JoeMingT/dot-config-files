@@ -6,7 +6,6 @@
 --                                     
 -- by Stephan Raabe (2023) 
 -- ----------------------------------------------------- 
-
 -- Function to check modules
 local function has_module(name)
   if pcall(function() require(name) end) then

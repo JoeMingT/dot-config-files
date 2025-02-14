@@ -51,6 +51,7 @@ vim.opt.compatible = false
 
 -- Automation
 vim.opt.autoread = true
+vim.opt.updatetime = 2000       -- Update interval
 
 -- Movement
 vim.opt.iskeyword = "@, 48-57, _, 192-255"
