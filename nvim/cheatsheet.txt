@@ -5,7 +5,7 @@ Enter Terminal-Normal Mode      | <Esc>
 
 ## nvim-terminal
 Toggle Terminal                 | <leader>;
-Open {n}-th Terminal            | <leader>{n}
+Open [n]-th Terminal            | <leader>[n]
 Increase Terminal Height        | <leader>+
 Decrease Terminal Height        | <leader>-
 Increase Terminal Width         | <leader><leader>+
@@ -94,3 +94,18 @@ Ignore Autocomplete             | <C-CR>
 
 ## neogen-keybinds
 Generate Annotations            | <leader>nf
+
+## comment-nvim
+Linewise comment current line         | gcc
+Blockwise comment current line        | gbc
+Linewise comment for n-lines          | [n]gcc
+Blockwise comment for n-lines         | [n]gbc
+Linewise comment for region           | gc[n]{motion}
+Blockwise comment for region          | gc[n]{motion}
+Linewise comment visual selection     | gc
+Blockwise comment visual selection    | gb
+Linewise comment starting next line            | gco
+Linewise comment starting previous line        | gcO
+Linewise comment starting at end of line       | gcA
+
+
